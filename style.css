@@ -19,6 +19,7 @@ body {
 .background {
     background-color: white;
     width: 70%;
+    min-width: 90%vw;
     height: 40%;
     border-bottom: 1px solid black;
     margin: auto;
