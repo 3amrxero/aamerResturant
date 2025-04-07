@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+<!-- Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,
+    300..800;1,300..800&display=swap" rel="stylesheet">
+<!-- others  -->
+
+    <link rel="icon" href="Images/pizzaicon.png">
+    <title>Aamer Pizza</title>
+</head> 
+
+<body>
+    <div class="background">
+        <header>
+            <div class="wall"></div>
+            <div class="container">
+                <h1>Aamer's Pizza!</h1>
+                <h2>The Best Pizza In The Whole Country!</h2>
+                <div class="welcome">
+                    <h3>Welcome to our Resturant</h1>
+                </div>
+            </div>
+        </header>
+        <nav>
+            <div class="navigate">
+                <ul>
+                    <li><a href="index.html" class="allow">Pizza</a></li>
+                    <li><a href="burger.html" class="allow">Burgers</a></li>
+                    <li><a href="drinks.html" class="allow">Drinks</a></li>
+                </ul>
+            </div>
+        </nav>
+<!-- sec 1 -->
+
+        <section class="section1">
+            <div class="container0">
+                <div class="img-container">
+                    <img src="Images/piza1.jpg" alt="1pizza" class="pizza">
+                </div>
+                <div class="text-container">
+                    <h4>Greek Pizza</h4>
+                    <p>Olive, Onions, Tomato</p>
+                </div>
+                <div class="price">
+                    <h4 id="price1">100.LE</h4>
+                </div>
+                <div>
+                    <button class="add-btn" id="add-btn" data-category="Pizza" data-name="Greek Pizza" data-price="100 L.E"> + </button>
+                </div>
+            </div>
+        </section>
+
+<!-- sec 2 -->
+                                             
+        <section>
+            <div class="container0">
+                <div class="img-container">
+                    <img src="Images/chickenpizza.jpg" alt="1pizza" class="pizza">
+                </div>
+                <div class="text-container">
+                    <h4>Chicken Pizza</h4>
+                    <p>Ransh sause, Celery, chicken</p>
+                </div>
+                <div class="price">
+                    <h4>180.LE</h4>
+                </div>
+                <div>
+                    <button class="add-btn" id="add-btn" data-category="Pizza" data-name="Chicken Pizza" data-price="180 L.E"> + </button>
+                </div>
+            </div>
+        </section>
+
+ <!-- sec 3 -->
+
+        <section>
+            <div class="container0">
+                <div class="img-container">
+                    <img src="Images/3pizza.jpg" alt="1pizza" class="pizza">
+                </div>
+                <div class="text-container">
+                    <h4>3 Pizza's</h4>
+                    <p>chicken pizza, greek pizza, mozarilaa pizza and a large Coke</p>
+                </div>
+                <div class="price">
+                    <h4>400.LE</h4>
+                </div>
+                <div>
+                    <button class="add-btn" id="add-btn" data-category="Pizza" data-name="3 Pizza's" data-price="400 L.E"> + </button>
+                </div>
+            </div>
+        </section>
+        
+ <!-- Finall Part -->
+
+        <section>
+            <div class="ordercontainer">
+                <div class="child">
+                    <h3 class="text">Your Order</h3>
+                </div>
+                <div class="child" id="pizza-cart">
+                    <h4>Pizza</h4>
+                    <Button alt="remove" class="remove-btn" id="pizza-remove-btn"> remove</Button>
+                    <h4 id="pizza-price">0 le</h4>
+                </div>
+                <div class="child">
+                    <h4>Burgers</h4>
+                    <Button class="remove-btn" id="burgers-remove-btn"> remove</Button>
+                    <h4 id="burger-price">0 le</h4>
+                </div>
+                <div class="child">
+                    <h4>Drinks</h4>
+                    <Button class="remove-btn" id="drinks-remove-btn"> remove</Button>
+                    <h4 id="drinks-price">0 le</h4>
+                </div>
+                <div class="child border marg" >
+                    <h3 class="text" id="total-price">Total price: 0 le</h3>
+                </div>
+                <div class="child last-btn">
+                    <button class="order" id="order">Complete Order</button>
+                </div>
+            </div>
+        </section>
+    </div>
+            <section>
+                <form action="" id="form">
+                    <h4>Enter Card Details</h4>
+                    <input
+                    type="text"
+                    name="cardname"
+                    id="card-name"
+                    placeholder="Card holder name"
+                    minlength="5"
+                    required
+                    >
+                    <input
+                    type="number"
+                    name="card number"
+                    id="card-number"
+                    placeholder="Enter card number"
+                    minlength="10"
+                    required
+                    >
+                    <input
+                    type="text"
+                    name="cvv"
+                    id="cvv"
+                    placeholder="CVV"
+                    pattern="[0-9]{3}"
+                    min="0"
+                    max="999"
+                    maxlength="3"
+                    required
+                    >
+                    <button type="submit" id="pay"> pay</button>
+                    <div class="x" typer="button" id="x">X</div>
+                </form>
+            </section>
+
+    <script src="main.js" type="module"></script>
+</body>
+</html>
