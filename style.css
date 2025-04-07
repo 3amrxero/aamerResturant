@@ -12,15 +12,13 @@ body {
     font-size: 16px;
     font-family:"Open Sans", sans-serif;
     text-align: center;
-    width: 1800px;
-    min-width: 99%vw;
+    width: 80%;
     margin: auto;
 
 }
 
 .background {
     background-color: white;
-    width: 100%vw;
     border-bottom: 1px solid black;
     margin: auto;
     position: relative;
