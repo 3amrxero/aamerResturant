@@ -7,20 +7,19 @@
 
 body {
 
-    background-color: rgb(236, 233, 233);
+    background-color: rgb(253, 253, 253);
     color: black;
     font-size: 16px;
     font-family:"Open Sans", sans-serif;
     text-align: center;
-    
+    width: 70%;
+    margin: auto;
 
 }
 
 .background {
     background-color: white;
-    width: 70%;
-    min-width: 90%vw;
-    height: 40%;
+    width: 100%vw;
     border-bottom: 1px solid black;
     margin: auto;
     position: relative;
@@ -89,14 +88,14 @@ h2 {
 }
 
 h3 {
-    font-size: 100%;
+    font-size: 120%;
     font-weight: 200;
 }
 
 .welcome {
     background-color: aliceblue;
     margin: auto;
-    width: 18%;
+    width: 20%;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -140,7 +139,7 @@ li {
     font-size: 300%;
     font-weight: 200;
     display: inline-block;
-    padding: 0 40px;
+    padding: 0 9%;
 }
 ul {
     border-bottom: .5px solid rgb(223, 211, 211);
