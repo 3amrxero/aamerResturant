@@ -12,7 +12,8 @@ body {
     font-size: 16px;
     font-family:"Open Sans", sans-serif;
     text-align: center;
-    width: 70%;
+    width: 1800px;
+    min-width: 99%vw;
     margin: auto;
 
 }
