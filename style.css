@@ -12,13 +12,14 @@ body {
     font-size: 16px;
     font-family:"Open Sans", sans-serif;
     text-align: center;
+    
 
 }
 
 .background {
     background-color: white;
-    width: 50% vw;
-    height: 50%;
+    width: 70%;
+    height: 40%;
     border-bottom: 1px solid black;
     margin: auto;
     position: relative;
@@ -135,7 +136,7 @@ nav a:active {
 
 li {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 200%;
+    font-size: 300%;
     font-weight: 200;
     display: inline-block;
     padding: 0 40px;
@@ -157,6 +158,10 @@ ul {
     min-height: 150px;
     height: 20em;
     margin: 10px 100px;
+}
+
+h4{
+    font-size: 190%;
 }
 
 .img-container{
@@ -183,7 +188,7 @@ ul {
 p {
     opacity: 60%;
     letter-spacing: -1px;
-    font-size: 14px;;
+    font-size: 120%;
 }
 
 
@@ -193,8 +198,8 @@ p {
 }
 
 .add-btn{
-    font-size: 30px;
-    padding: 5px 13px;
+    font-size: 50px;
+    padding: 10px 23px;
     border-radius: 50%;
     border: none;
     cursor: pointer;
@@ -217,7 +222,7 @@ p {
 .ordercontainer{ 
     display: flex;
     flex-direction: column;
-    margin: 10px 50px;
+    margin: 10px 80px;
 }
 
 .child {
@@ -231,7 +236,7 @@ p {
 .text{
     background-image: linear-gradient(rgb(241, 232, 232), rgb(171, 216, 81));
     box-shadow: 0 0 5px olive;
-    font-size: 26px;
+    font-size: 210%;
     margin: auto;
     border-radius: 5px;
     font-weight: bold;
@@ -239,7 +244,7 @@ p {
 }
 
 .remove-btn{
-    margin-left: 2%;
+    margin-left: 5%;
     margin-right: auto;
     margin-top: 5px;
     cursor: pointer;
@@ -257,6 +262,7 @@ p {
 .remove-btn:hover{
     opacity: 80%;
     transition: .2s;
+    border: 1px solid rgb(85, 82, 82);
 }
 .remove-btn:active{
     transform:translateY(1px);
@@ -287,7 +293,7 @@ p {
     background: none;
     border: none;
     margin: auto;
-    font-size: 1.5em;
+    font-size: 2em;
     font-weight: 200;
     color: #000000;
     cursor: pointer;
