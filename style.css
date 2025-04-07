@@ -17,7 +17,7 @@ body {
 
 .background {
     background-color: white;
-    width: 45%;
+    width: 50% vw;
     height: 50%;
     border-bottom: 1px solid black;
     margin: auto;
@@ -32,7 +32,7 @@ body {
 header {
     font-family: "Boldonse", Arial, Helvetica, sans-serif;
     font-weight: 400;
-    height: 200px;
+    height: 400px;
     position: relative;
 }
 
@@ -56,13 +56,15 @@ header {
 
 .wall-drinks {
     background-image: url(/Images/drinksheader.jpg);
-    background-size: 110% 140%;
+    background-size: 100%;
+    background-size: contain;
+    background-repeat: repeat-x;
 }
 
 .container{
     display: flex;
     flex-direction: column;
-    margin: 0px 30px 30px 30px;
+    margin: 0px 50px 50px 50px;
 }
 
 h1,h2{
@@ -71,28 +73,28 @@ h1,h2{
 }
 
 h1 {
-    font-size: 28px;
+    font-size: 400%;
     font-weight: 600;
     margin-left: 20px;
     margin-right: auto;
-    margin-top: 3.5%;
+    margin-top: 5%;
 }
 h2 {
-    font-size: 20px;
+    font-size: 200%;
     font-weight: 400;
     margin-left: 80px;
     margin-right: auto;
 }
 
 h3 {
-    font-size: 13px;
+    font-size: 100%;
     font-weight: 200;
 }
 
 .welcome {
     background-color: aliceblue;
     margin: auto;
-    width: 250px;
+    width: 18%;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -107,7 +109,7 @@ h3 {
     display: flex;
     justify-content: space-around;
     /* border: 1px solid black; */
-    margin: 2% auto 10px auto;
+    margin: 1% auto 10px auto;
     padding: 0 150px;
 
 }
@@ -122,18 +124,18 @@ nav a {
 
 nav a:hover,
 nav a:active {
-    font-size: 22px;
+    font-size: 130%;
     color: red;
     box-shadow: 1px 1px 3px rgb(0, 0, 0);
     padding: 5px 15px;
-    border-radius: 50%;
+    border-radius: 40%;
     transition: .1s;
 }
 
 
 li {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
+    font-size: 200%;
     font-weight: 200;
     display: inline-block;
     padding: 0 40px;
@@ -153,7 +155,8 @@ ul {
     justify-content: space-between;
     border-bottom: .5px solid rgb(165, 163, 163);
     min-height: 150px;
-    margin: 10px 50px;
+    height: 20em;
+    margin: 10px 100px;
 }
 
 .img-container{
@@ -162,8 +165,8 @@ ul {
 }
 
 .pizza{
-    width: 65px;
-    height: 65px;
+    width: 12em;
+    height: 12em;
     border-radius: 50%;
 }
 
