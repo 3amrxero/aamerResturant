@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Boldonse&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,17 +10,17 @@ body {
     background-color: rgb(253, 252, 252);
     color: black;
     font-size: 1rem;
-    font-family:"Open Sans", sans-serif;
+    font-family: "Open Sans", sans-serif;
     text-align: center;
 }
 
 .background {
     background-color: white;
-    /* original: width: 45%; height: 50%; */
     border-bottom: 0.063rem solid black;
     margin: auto;
     position: relative;
     box-shadow: 0 0 0.063rem rgb(39, 39, 39);
+    width: 80%; /* Default width for scalability */
 }
 
 /* Header layout */
@@ -27,12 +28,11 @@ body {
 header {
     font-family: "Boldonse", Arial, Helvetica, sans-serif;
     font-weight: 400;
-    /* original height: 200px */
     height: 18.5rem;
     position: relative;
 }
 
-.wall, .wall-burger, .wall-drinks{
+.wall, .wall-burger, .wall-drinks {
     position: absolute;
     background-size: cover;
     background-repeat: no-repeat;
@@ -42,11 +42,11 @@ header {
     z-index: 0;
 }
 
-.wall{
+.wall {
     background-image: url(/Images/pizzaheader.jpg);
 }
 
-.wall-burger{
+.wall-burger {
     background-image: url(/Images/burgerheader.jpg);
 }
 
@@ -55,27 +55,26 @@ header {
     background-size: 110% 140%;
 }
 
-.container{
+.container {
     display: flex;
     flex-direction: column;
     margin: 0rem 1.875rem 1.875rem 1.875rem;
 }
 
-h1, h2{
+h1, h2 {
     z-index: 1;
     text-shadow: 0.063rem 0.063rem 0rem rgb(255, 255, 255);
 }
 
 h1 {
-    /* original: 28px; margin-left: 20px; margin-top: 3.5% */
     font-size: 1.75rem;
     font-weight: 600;
     margin-left: 1.25rem;
     margin-right: auto;
     margin-top: 3.5%;
 }
+
 h2 {
-    /* original: 20px; margin-left: 80px */
     font-size: 1.25rem;
     font-weight: 400;
     margin-left: 5rem;
@@ -90,7 +89,6 @@ h3 {
 .welcome {
     background-color: aliceblue;
     margin: auto;
-    /* original width: 250px */
     width: 15.625rem;
     position: absolute;
     bottom: 0;
@@ -105,14 +103,12 @@ h3 {
 .navigate {
     display: flex;
     justify-content: space-around;
-    /* border: 1px solid black; */
     margin: 2% auto 10px auto;
-    /* original padding: 0 150px; */
     padding: 0 9.375rem;
 }
 
 nav a {
-    text-decoration: none;        
+    text-decoration: none;
     color: rgb(192, 9, 24);
 }
 
@@ -126,39 +122,39 @@ nav a:active {
     transition: 0.1s;
 }
 
+ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    border-bottom: 0.031rem solid rgb(223, 211, 211);
+    width: 100%;
+}
+
 li {
     font-family: 'Times New Roman', Times, serif;
-    /* original: 20px */
     font-size: 1.6rem;
     font-weight: 200;
-    display: inline-block;
-    padding: 0 2.5rem;
-}
-ul {
-    border-bottom: 0.031rem solid rgb(223, 211, 211);
-    padding-bottom: 0.313rem;
-    width: 100%;
+    padding: 0 1rem; /* Adjusted for scalability */
 }
 
 /* Section Layout */
 
-.container0{
+.container0 {
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-bottom: 0.031rem solid rgb(165, 163, 163);
-    /* original min-height: 150px */
     min-height: 9.375rem;
     margin: 0.625rem 3.125rem;
 }
 
-.img-container{
-    /* border: 1px solid black; */
+.img-container {
     margin-top: 0.625rem;
 }
 
-.pizza{
-    /* original: width: 65px; height: 65px */
+.pizza {
     width: 4.063rem;
     height: 4.063rem;
     border-radius: 50%;
@@ -177,17 +173,15 @@ ul {
 p {
     opacity: 60%;
     letter-spacing: -0.063rem;
-    /* original: 14px */
     font-size: 0.875rem;
 }
 
-.price{
+.price {
     margin-right: 1.563rem;
     margin-left: auto;
 }
 
-.add-btn{
-    /* original: font-size: 30px; padding: 5px 13px */
+.add-btn {
     font-size: 1.875rem;
     padding: 0.313rem 0.813rem;
     border-radius: 50%;
@@ -196,11 +190,13 @@ p {
     background-color: yellowgreen;
     box-shadow: 0 0.313rem 0.125rem gray;
 }
-.add-btn:hover{
+
+.add-btn:hover {
     background-color: rgb(192, 231, 154);
     transition: 0.2s;
 }
-.add-btn:active{
+
+.add-btn:active {
     transform: translateY(0.188rem);
     box-shadow: 0 0.125rem 0.063rem rgb(44, 44, 44);
     transition: 0.1s;
@@ -208,7 +204,7 @@ p {
 
 /* Final layout */
 
-.ordercontainer{ 
+.ordercontainer {
     display: flex;
     flex-direction: column;
     margin: 0.625rem 3.125rem;
@@ -221,10 +217,9 @@ p {
     justify-content: space-between;
 }
 
-.text{
+.text {
     background-image: linear-gradient(rgb(241, 232, 232), rgb(171, 216, 81));
     box-shadow: 0 0 0.313rem olive;
-    /* original: 26px */
     font-size: 1.625rem;
     margin: auto;
     border-radius: 0.313rem;
@@ -232,7 +227,7 @@ p {
     padding: 0.313rem 0.625rem;
 }
 
-.remove-btn{
+.remove-btn {
     margin-left: 2%;
     margin-right: auto;
     margin-top: 0.313rem;
@@ -242,30 +237,29 @@ p {
     background-color: rgb(255, 255, 255);
     font-style: italic;
     font-weight: 500;
-    /* original: 12px */
     font-size: 0.75rem;
     opacity: 50%;
     box-shadow: 0 0 0.063rem black;
     padding: 0.125rem;
 }
 
-.remove-btn:hover{
+.remove-btn:hover {
     opacity: 80%;
     transition: 0.2s;
 }
-.remove-btn:active{
+
+.remove-btn:active {
     transform: translateY(0.063rem);
 }
 
-.ordercontainer h4{
-    /* original width: 70px */
+.ordercontainer h4 {
     width: 4.375rem;
     text-align: start;
 }
 
-.last-btn{
+.last-btn {
     width: 100%;
-    background-image: linear-gradient( to right, rgb(249, 250, 212), rgb(252, 246, 162), rgb(250, 250, 49) ) ;
+    background-image: linear-gradient(to right, rgb(249, 250, 212), rgb(252, 246, 162), rgb(250, 250, 49));
     position: absolute;
     right: 0;
     left: 0;
@@ -276,7 +270,7 @@ p {
     box-shadow: 0 0.313rem 0.125rem black;
 }
 
-.order{
+.order {
     height: 100%;
     width: 100%;
     font-family: 'Boldonse';
@@ -298,8 +292,8 @@ p {
 
 form {
     padding: 0.313rem 0.313rem 0.313rem 1.25rem;
-    /* original width: 20%; height: 350px */
-    width: 20%;
+    width: 30%; /* Adjusted for better default scaling */
+    max-width: 400px; /* Limits width on large screens */
     height: 21.875rem;
     display: none;
     flex-direction: column;
@@ -315,27 +309,26 @@ form {
     box-shadow: 0 0 0.125rem limegreen;
     border: none;
 }
+
 form h4 {
     padding-bottom: 1.25rem;
-    /* original: 22px */
     font-size: 1.375rem;
 }
 
-input, form button{
-    /* original: width: 85%; height: 15% */
+input, form button {
     width: 85%;
     height: 15%;
     border-radius: 0.313rem;
     border: 0.063rem solid rgb(199, 198, 198);
 }
+
 input {
     text-align: start;
-    /* original: 18px */
     font-size: 1.125rem;
     padding: 0 0.5rem;
 }
 
-input:focus{
+input:focus {
     outline: none;
     text-decoration: none;
     border: 0.063rem solid black;
@@ -343,7 +336,6 @@ input:focus{
 }
 
 form button {
-    /* original: 24px font-size */
     font-size: 1.5rem;
     font-weight: 600;
     background-color: #FCD34D;
@@ -351,14 +343,17 @@ form button {
     color: whitesmoke;
     text-shadow: 0 0 0.063rem black;
 }
-form button:hover{
+
+form button:hover {
     opacity: 80%;
     cursor: pointer;
 }
-form button:active{
+
+form button:active {
     transform: translateY(0.125rem);
     transition: 0.2s;
 }
+
 .x {
     cursor: pointer;
     position: absolute;
@@ -369,48 +364,50 @@ form button:active{
     font-weight: bold;
     box-shadow: 0 0 0.063rem rgb(48, 47, 47);
 }
-.x:hover{
+
+.x:hover {
     background-color: #64646b;
     text-shadow: 0 0 0.063rem white;
 }
 
-/* utility */
+/* Utility */
 
 .border {
     border-top: 0.125rem solid rgb(3, 31, 31);
 }
-.marg{
+
+.marg {
     margin-bottom: 8%;
 }
 
-/* --------------------------------------- */
-/*            RESPONSIVE STYLES            */
-/* Only modifying units/responsiveness; nothing else changes */
+/* Responsive Styles */
 
-/* Mobile styles (max-width: 768px) */
 @media (max-width: 650px) {
     .background {
-        width: 90%;
-        /* height left unchanged */
+        width: 100%;
     }
     
     header {
-        height: 9.375rem;
+        height: 14.375rem;
     }
     
     h1 {
+        margin-top: 3rem;
         font-size: 1.375rem;
         margin-left: 0.625rem;
     }
     
     h2 {
-        font-size: 1rem;
+        margin-top: 1rem;
+        font-size: .9rem;
         margin-left: 1.25rem;
+    }
+    h3 {
+        font-size: .7rem;
     }
     
     .welcome {
-        width: 80%;
-        font-size: 0.875rem;
+        width: 50%;
         padding: 0.5rem;
     }
     
@@ -425,31 +422,36 @@ form button:active{
         font-size: 1.125rem;
     }
     
+    ul {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
     li {
-        display: block;
-        padding: 0.625rem 0;
+        padding: 0.2rem 0;
     }
     
     .container0 {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         margin: 0.625rem;
+        justify-content: center;
     }
-    
+   
     .pizza {
-        /* Increase pizza image for touch screens */
-        width: 6.25rem;
-        height: 6.25rem;
+        width: 6rem;
+        height: 6rem;
     }
     
     .text-container p {
-        font-size: 1rem;
-        text-align: center;
+        font-size: .8rem;
+        text-align: start;
     }
     
     .add-btn {
         font-size: 1.5rem;
         padding: 0.5rem 1rem;
+        margin-bottom: .5rem ;
     }
     
     .ordercontainer {
@@ -457,7 +459,7 @@ form button:active{
     }
     
     .child {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
     }
     
@@ -466,19 +468,48 @@ form button:active{
     }
     
     form {
-        width: 90%;
-        height: auto;
+        width: 60%;
+
     }
     
     form button {
         font-size: 1.125rem;
     }
+    .price {
+        font-size: .9rem;
+        margin-left: auto;
+        margin-right: .5rem;
+    }
+    .marg{
+        margin-bottom: 5rem;
+    }
 }
 
-/* Desktop styles (min-width: 1024px) */
-@media (min-width: 1024px) {
+@media (min-width: 651px) and (max-width: 1023px) {
     .background {
-        width: 70%;
+        width: 100%;
+    }
+    
+    .navigate {
+        padding: 0 5rem;
+    }
+    
+    li {
+        padding: 0 1rem;
+    }
+    
+    form {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1024px) {
+    body{
+        height: 100%;
+    }
+    .background {
+        width: 100%;
+        height: 100%vh;
     }
     
     .pizza {
