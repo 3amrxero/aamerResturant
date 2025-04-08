@@ -70,7 +70,7 @@ function orderSum(){
     drinksPrice.textContent = `${totalDrinks} L.E`
     burgerPrice.textContent = `${totalBurger} L.E`
     pizzaPrice.textContent = `${totalPizza} L.E`
-    totalPrice.textContent = `Total price: ${TotalOrder} L.E`
+    totalPrice.innerText = `${TotalOrder} L.E`
 }
 
 
